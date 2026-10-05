@@ -1,0 +1,117 @@
+{
+  "results": [
+    {
+      "Model": "flip_idx giải phẫu",
+      "Pose mAP50-95 — val gốc": 0.4573462529843696,
+      "Pose mAP50-95 — val lật gương": 0.43884777970456634,
+      "Giảm (điểm %)": 1.8498473279803251
+    },
+    {
+      "Model": "flip_idx đồng nhất",
+      "Pose mAP50-95 — val gốc": 0.4169217121481716,
+      "Pose mAP50-95 — val lật gương": 0.29772304416546624,
+      "Giảm (điểm %)": 11.919866798270535
+    }
+  ],
+  "sigma_results": [
+    {
+      "Model": "flip_idx giải phẫu",
+      "Val": "gốc",
+      "Sigma": "chuẩn 1/K",
+      "Box mAP50-95": 0.9303488492063492,
+      "Pose mAP50": 0.995,
+      "Pose mAP50-95": 0.4573462529843696
+    },
+    {
+      "Model": "flip_idx đồng nhất",
+      "Val": "gốc",
+      "Sigma": "chuẩn 1/K",
+      "Box mAP50-95": 0.9036284624648736,
+      "Pose mAP50": 0.995,
+      "Pose mAP50-95": 0.4169217121481716
+    },
+    {
+      "Model": "flip_idx giải phẫu",
+      "Val": "lật gương",
+      "Sigma": "chuẩn 1/K",
+      "Box mAP50-95": 0.9184411764705882,
+      "Pose mAP50": 0.995,
+      "Pose mAP50-95": 0.43884777970456634
+    },
+    {
+      "Model": "flip_idx đồng nhất",
+      "Val": "lật gương",
+      "Sigma": "chuẩn 1/K",
+      "Box mAP50-95": 0.8939470218275991,
+      "Pose mAP50": 0.8775428816466551,
+      "Pose mAP50-95": 0.29772304416546624
+    },
+    {
+      "Model": "flip_idx giải phẫu",
+      "Val": "gốc",
+      "Sigma": "độ nhạy: sigma/2",
+      "Box mAP50-95": 0.9303488492063492,
+      "Pose mAP50": 0.40428048152317,
+      "Pose mAP50-95": 0.07155392515481898
+    },
+    {
+      "Model": "flip_idx đồng nhất",
+      "Val": "gốc",
+      "Sigma": "độ nhạy: sigma/2",
+      "Box mAP50-95": 0.9036284624648736,
+      "Pose mAP50": 0.27001967642517066,
+      "Pose mAP50-95": 0.030121907974721546
+    },
+    {
+      "Model": "flip_idx giải phẫu",
+      "Val": "lật gương",
+      "Sigma": "độ nhạy: sigma/2",
+      "Box mAP50-95": 0.9184411764705882,
+      "Pose mAP50": 0.34347148985315956,
+      "Pose mAP50-95": 0.05429373018189715
+    },
+    {
+      "Model": "flip_idx đồng nhất",
+      "Val": "lật gương",
+      "Sigma": "độ nhạy: sigma/2",
+      "Box mAP50-95": 0.8939470218275991,
+      "Pose mAP50": 0.13334184195086451,
+      "Pose mAP50-95": 0.016770063586630867
+    }
+  ],
+  "sigmas": {
+    "chuẩn 1/K": [
+      0.08333333333333333,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.08333333333333333
+    ],
+    "độ nhạy: sigma/2": [
+      0.041666666666666664,
+      0.041666666666666664,
+      0.041666666666666664,
+      0.041666666666666664,
+      0.041666666666666664,
+      0.041666666666666664,
+      0.041666666666666664,
+      0.041666666666666664,
+      0.041666666666666664,
+      0.041666666666666664,
+      0.041666666666666664,
+      0.041666666666666664
+    ]
+  },
+  "epochs": 40,
+  "imgsz": 640,
+  "seed": 0,
+  "ultralytics": "8.4.171",
+  "analysis": "Kết quả thực nghiệm 4C:\n\n- flip_idx giải phẫu: Pose mAP50–95 gốc = 0.4573, gương = 0.4388; giảm 1.85 điểm phần trăm.\n\n- flip_idx đồng nhất: Pose mAP50–95 gốc = 0.4169, gương = 0.2977; giảm 11.92 điểm phần trăm.\n\nModel đồng nhất giảm nhiều hơn model giải phẫu 10.07 điểm phần trăm. Kết quả phù hợp với dự đoán lỗi flip_idx lộ rõ hơn trên ảnh gương.\n\n- flip_idx giải phẫu, chuẩn 1/K: giảm Box mAP50–95 = 1.19, Pose mAP50 = 0.00, Pose mAP50–95 = 1.85 điểm phần trăm.\n\n- flip_idx giải phẫu, độ nhạy: sigma/2: giảm Box mAP50–95 = 1.19, Pose mAP50 = 6.08, Pose mAP50–95 = 1.73 điểm phần trăm.\n\n- flip_idx đồng nhất, chuẩn 1/K: giảm Box mAP50–95 = 0.97, Pose mAP50 = 11.75, Pose mAP50–95 = 11.92 điểm phần trăm.\n\n- flip_idx đồng nhất, độ nhạy: sigma/2: giảm Box mAP50–95 = 0.97, Pose mAP50 = 13.67, Pose mAP50–95 = 1.34 điểm phần trăm.\n\nBox mAP không đo danh tính trái/phải của keypoint. Nếu Box mAP giảm ít nhưng Pose mAP giảm nhiều, box metric đã che lỗi pose trong lần chạy này. Nếu Pose mAP50 giảm ít hơn mAP50–95, ngưỡng OKS 0.5 che một phần sai số. Cần đọc các mức giảm trên để xác định trường hợp thực tế, không kết luận chỉ từ tên metric.\n\nSigma nhỏ làm OKS nhạy hơn với sai số tọa độ. Chỉ so hai model trong cùng một bộ sigma; mAP khác sigma không phải cùng thước đo. Phép thử sigma/2 là kiểm tra độ nhạy, không chứng minh đó là dung sai đúng của dữ liệu.\n\nThiết kế val: có hổ quay trái và phải thật, cân bằng hướng nhìn, thêm chân che nhau/cắt mép/nhiều kích thước; thống nhất nhãn giải phẫu và chia train/val theo cá thể hoặc nguồn ảnh để tránh rò rỉ. Báo cáo riêng từng hướng, Box mAP, Pose mAP50 và mAP50–95; xem thêm sai số từng keypoint và các ca tăng OKS sau hoán đổi trái/phải. Val gương là kiểm tra có kiểm soát, chưa thay thế ảnh triển khai thật.\n\nMột seed và 53 ảnh val chưa đủ khẳng định khác biệt có ý nghĩa thống kê; nên lặp nhiều seed và bootstrap theo cặp ảnh gốc/gương.\n\nChưa có nhãn lặp độc lập nên chưa thực hiện phần sigma tự ước lượng của lựa chọn bài tập về nhà 1."
+}
